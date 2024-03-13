@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: violet;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1>USER INPUT & CONDITIONAL
+
+    STATEMENT</h1>
+
+
+
+
+
+<script>
+
+let city =  prompt("write your city name !!");
+
+if (city == "karachi") {
+    alert("“Welcome to city of lights”")
+}
+else{
+    alert("this is not your city!!")
+}
+
+
+
+
+
+var gender = prompt("Please enter your gender!!")
+
+if (gender === "male"){
+    alert("Good Morning Sir.");
+}else if(gender === "female"){
+    alert("Good Morning Ma'am.")
+}
+else{
+    alert("Invalid input. Please enter 'male' or 'female'.")
+}
+
+
+var color = prompt("please input the color of road traffic signal !!")
+
+var color1 = "Red" ;
+var color2 = "Yellow" ;
+var color3 = "Green" ;
+var color4 = "all colors" ;
+
+if (color === color1 ){
+document.write("<table> <tr> <th><b> Signal Color </b></th>>" + "  " +"<th><b> Message </b></th> </tr>"+
+    "<tr> <th><b>"+color1+ " </b></th>>" + "  " +"<th><b> Must Stop </b></th> </tr>"+
+    "<tr> <th><b>"+"-----" +"</b></th>>" + "  " +"<th><b> ----- </b></th> </tr>"+
+    "<tr> <th><b>"+ "----- "+" </b></th>>" + "  " +"<th><b> ----- </b></th> </tr>"+
+    "</table>")
+}
+else if(color === color2){
+    document.write("<table> <tr> <th><b> Signal Color </b></th>>" + "  " +"<th><b> Message </b></th> </tr>"+
+    "<tr> <th><b>"+"-----"+ " </b></th>>" + "  " +"<th><b> ----- </b></th> </tr>"+
+    "<tr> <th><b>"+color2+ " </b></th>>" + "  " +"<th><b> Ready to move </b></th> </tr>"+
+    "<tr> <th><b>"+"-----"+ " </b></th>>" + "  " +"<th><b> ----- </b></th> </tr>"+
+    "</table>")
+}
+else if(color === color3){
+    document.write("<table> <tr> <th><b> Signal Color </b></th>>" + "  " +"<th><b> Message </b></th> </tr>"+
+    "<tr> <th><b>"+"-----"+ " </b></th>>" + "  " +"<th><b> ----- </b></th> </tr>"+
+    "<tr> <th><b>"+"------"+ " </b></th>>" + "  " +"<th><b> ------ </b></th> </tr>"+
+    "<tr> <th><b>"+color3+ " </b></th>>" + "  " +"<th><b> Move now </b></th> </tr>"+
+    "</table>")
+}
+
+else if(color === color4){
+    document.write("<table> <tr> <th><b> Signal Color </b></th>>" + "  " +"<th><b> Message </b></th> </tr>"+
+    "<tr> <th><b>"+color1+ " </b></th>>" + "  " +"<th><b> Must Stop </b></th> </tr>"+
+    "<tr> <th><b>"+color2+ " </b></th>>" + "  " +"<th><b> Ready to move </b></th> </tr>"+
+    "<tr> <th><b>"+color3+ " </b></th>>" + "  " +"<th><b> Move now </b></th> </tr>"+
+    "</table>")
+}
+else{
+    alert("Invalid input. Please enter 'Red' , 'Yellow ', 'Green' , 'all colors.'")
+}
+
+
+var fuel = +prompt("Please input remaining fuel in car")
+
+if (fuel < 0.25 ) {
+    alert("“Please refill the fuel in your car”")
+}
+else {
+    alert ("Keep Going")
+}
+
+var a = 4;
+if (++a === 5){
+alert("given condition for variable a is true");
+}
+
+
+var b = 82;
+if (b++ === 83 ){
+    
+alert("given condition for variable b is true"  );
+}
+
+var c = 12;
+if (c++ === 13){
+alert("condition 1 is true");
+}
+if (c === 13){
+alert("condition 2 is true");
+}
+if (++c < 14){
+alert("condition 3 is true");
+}
+if(c === 14){
+alert("condition 4 is true ");
+}
+
+
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+alert("The cost equals");}
+
+ 
+
+if (true){
+alert("True");
+}
+if (false){
+alert("False");
+}
+
+
+if("car" < "cat"){
+alert("car is smaller than cat");}
+
+document.write("<h1> MarkSheet </h1><br><br><br>")
+
+var totalmarks = prompt("Enter Your Total Marks !!");
+var subject1 = +prompt("Enter Your First Subject Obtained Marks!");
+var subject2 = +prompt("Enter Your Second Subject Obtained Marks!");
+var subject3 = +prompt("Enter Your Third Subject Obtained Marks!");
+
+var totalobtainedmarks = subject1 + subject2 + subject3;
+var percentage = (totalobtainedmarks / totalmarks) *100;
+
+document.write("<h4> Total Marks :" +totalmarks + "</h4>")
+    document.write("<h4> Marks Obtained :" +totalobtainedmarks +"</h4>")
+    document.write("<h4> Percentage :" +percentage +"%</h4>")
+
+    if(percentage >= 80){
+        document.write("<h4> Grade : A-one </h4>"+"<h4>Remarks : Excellent </h4>")
+    }
+else if(percentage >= 70){
+    document.write("<h4> Grade : A </h4>"+"<h4>Remarks : Good </h4>")
+}
+else if(percentage >= 60){
+    document.write("<h4> Grade : B </h4>"+"<h4>Remarks : You need to improve </h4>")
+}
+else if(percentage < 60){
+    document.write("<h4> Grade : Fail </h4>"+"<h4>Remarks : Sorry </h4>")
+}
+else{
+    alert("<h4> You Missing Something Try Again! </h4>")
+}
+
+
+
+var userguess = +prompt("Guess the secret number (between 1 and 10):")
+
+if (userguess === 4 || userguess === 7){
+    alert("Bingo! Correct answer.")
+}
+else if (userguess === 4 -1 || userguess === 7+1){
+ alert("Close enough to the correct answer.")
+}
+else{
+    alert("Sorry Incorrect Guess . ")
+}
+
+
+var user = +prompt("Enter a number to check if it's divisible by 3:");
+
+if (user %3 == 0){
+    alert(user +" is divisible by '3'")
+}
+else{
+    alert(user +" is not divisible by '3' ")
+}
+
+
+
+var num = +prompt("Please enter a number that checks is 'even' number or 'odd'  number" )
+
+if (num %2 ===0){
+    alert ("This is even number")
+}
+else{
+    alert("This is Odd number")
+}
+
+
+var Themp = +prompt("Please Enter your city Themperature!!")
+
+if (40 < Themp){
+    alert("'It is too hot outside.'")
+}
+else if (30 < Themp){
+    alert("'The Weather today is Normal.'")
+}
+else if (20 < Themp){
+    alert("“Today’s Weather is cool.”")
+}
+else if (10 < Themp){
+    alert("“OMG! Today’s weather is so Cool.”")
+}
+else if (0 < Themp){
+    alert("“OMG. Don't go Outside the Home You Will Dead!!”")
+}
+else{
+    alert("Please Input a Valid Number !!")
+}
+
+
+var  firstnum = +prompt("Please Enter your first number that you want to calculated !!!");
+
+var  secondnum = +prompt("Please Enter your second number that you want to calculated !!!");
+
+var operator = prompt("Please Enter your operation Select one '+','-','*','/','%' !!!")
+
+if(operator === "+"){
+    alert(firstnum + secondnum )
+}
+else if(operator === "-"){
+    alert(firstnum - secondnum )
+}
+else if(operator === "*"){
+    alert(firstnum * secondnum )
+}
+else if(operator === "/"){
+    alert(firstnum / secondnum )
+}
+else if(operator === "%"){
+    alert(firstnum % secondnum )
+}
+else{
+    alert( "Please Enter a Valid 'Number' Or 'Operation' " )
+}
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

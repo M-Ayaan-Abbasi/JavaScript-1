@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-weight: bold;
+            background-color: green;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>IF...ELSE & ELSE IF STATEMENT,
+        TESTING SET OF CONDITIONS</h1>
+
+
+
+
+
+    <script>
+
+
+        var char = prompt("Enter a Character!!")
+
+
+        if (char > 0) {
+            alert(char + " is a number.")
+        }
+        else if (char >= "a") {
+            alert(char + " is an Lowercase letter.")
+        }
+        else if (char >= "A") {
+            alert(char + " is a Uppercase letter.")
+        } else {
+            alert(char + " is not a number, uppercase letter, or lowercase letter.")
+        }
+
+
+
+        var num1 = +prompt("enter number 1 integer ");
+
+        var num2 = +prompt("enter number 2 integer ");
+
+        if (num1 === num2) {
+            alert("The TWO Integers are equal!!")
+        } else if (num1 > num2) {
+            alert(num1 + "Is Larger than " + num2)
+        } else {
+            alert(num2 + "Is Larger Than" + num1)
+        }
+
+
+
+        var number1 = +prompt("dial a number i tell you it's 'postive' or 'Negative'");
+
+        if (number1 === 0) {
+            alert("The number is '0'")
+        } else if (number1 > 0 && number1 <= 10) {
+            alert("The number value is Postive ")
+        } else if (number1 < 0 && number1 >= -10) {
+            alert("The number value is negative")
+        } else {
+            alert("please dial a number -10 to 10 I will tell you who is positive or negative")
+        }
+
+        var alpha = prompt("Input a Vowel if the vowel is right we show you 'True' if not we Show you 'false' !!");
+
+        if (alpha === "A" || alpha === "a") {
+            alert("True")
+        }
+        else if (alpha === "E" || alpha === "e") {
+            alert("True")
+        }
+        else if (alpha === "I" || alpha === "i") {
+            alert("True")
+        } else if (alpha === "O" || alpha === "o") {
+            alert("True")
+        } else if (alpha === "U" || alpha === "u") {
+            alert("True")
+        }
+        else {
+            alert("False")
+        }
+
+
+        let password = "hello22";
+        var userrr = prompt("Please enter your correct password!!")
+
+        if (userrr === password) {
+            alert("Correct! The password you entered matches the original password.");
+        }
+        else if (userrr === "") {
+            alert("Please enter your password!!")
+
+        } else {
+            alert("Incorrect password")
+        }
+
+
+
+
+        var greeting;
+        var hour = 13;
+        if (hour < 18) {
+            greeting = "Good day";
+            alert(greeting)
+
+        }
+        else {
+            greeting = "Good evening";
+            alert(greeting)
+
+        }
+
+
+
+        var time = prompt("Enter the time in 24-hour clock format (e.g., 19.00 for 7pm):")
+
+        if (time >= 0 && time < 12.00) {
+            alert("Good morning!");
+        }
+        else if (time >= 12.00 && time < 17.00) {
+            alert("Good afternoon!");
+        }
+        else if (time >= 17.00 && time < 21.00) {
+            alert("Good evening!");
+        }
+        else if (time >= 21.00 && time < 23.59) {
+            alert("Good night!");
+        }
+        else {
+            alert("Invalid time input.");
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
